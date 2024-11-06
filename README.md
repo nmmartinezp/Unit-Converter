@@ -14,8 +14,8 @@ This is responsible for handling the data sent from the web app, performing the 
 ## Captures of Unit Converter
 
 <div style="display: flex; justify-content: space-between;">
-  <img style="border: 1px solid white" src="images/1.png" width="500" alt="Imagen 1">
-  <img style="border: 1px solid white" src="images/2.png" width="500" alt="Imagen 2">
+  <img style="border: 1px solid white" src="images/1.png" width="600" alt="Imagen 1">
+  <img style="border: 1px solid white" src="images/2.png" width="600" alt="Imagen 2">
 </div>
 
 ## Used Techonologies
