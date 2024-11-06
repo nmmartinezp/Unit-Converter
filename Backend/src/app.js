@@ -11,10 +11,10 @@ const weightRouter = require('./routes/weightRoute');
 
 const app = express();
 
-// Permitir solicitudes desde tu frontend
+// Open requests from frontend
 app.use(cors({
     origin: "http://localhost:5173" //frontend en Vite
-  }));
+}));
 
 //config
 app.set('port', config.app.port);
