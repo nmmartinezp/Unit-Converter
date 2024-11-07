@@ -44,7 +44,13 @@ This is responsible for handling the data sent from the web app, performing the 
 
 ## Local Installation
 
-1. Clone this repository:
+1. Make sure you have nodejs installed, you can do it for your cli, this must show a version number of nodejs.
+   ```bash
+   node --version
+   ```
+   if not, go to the official website to download and install it, version must be 22.1 or higher, you can do it from this [here](https://nodejs.org/en/download/package-manager).
+
+2. Clone this repository:
    ```bash
    git clone https://github.com/nmmartinezp/Unit-Converter.git
    ```
