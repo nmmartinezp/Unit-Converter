@@ -18,7 +18,7 @@ This is responsible for handling the data sent from the web app, performing the 
   <img style="border: 1px solid white" src="images/2.png" width="600" alt="Imagen 2">
 </div>
 
-## Used Techonologies
+## Used Techonologies-Libraries
 
 ### `Frontend`
 
