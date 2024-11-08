@@ -85,9 +85,8 @@ Into Frontend folder:
 2. Configure environment variable file .env to root folder, with routes of api
   ```.env
     VITE_API_URL=http://localhost:SERVERPORT/converter/
-    VITE_API_URL_LENGTH=lengthconvert/
-    VITE_API_URL_WEIGHT=weightconvert/
-    VITE_API_URL_TEMPERATURE=temperatureconvert/
+    VITE_API_URL_EXT_CONVERT=convert/
+    VITE_API_URL_EXT_MES=mesurements/
   ```
 
 ## Practice Project for
