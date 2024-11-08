@@ -1,10 +1,10 @@
 const { success } = require("../middlewares/response");
-const temperatureService = require('../services/temperatureService');
+const convertService = require('../services/convertService');
 
-class temperatureController {
+class convertController {
     async convert(req, res, next){
         try {
-            const item = await temperatureService.convertUnit(req.params.value, req.params.from, req.params.to);
+            const item = await convertService.convertUnit(req.params.type, req.params.value, req.params.from, req.params.to);
             success(req, res, item, 200);
         } catch (err) {
             next(err);
@@ -13,7 +13,7 @@ class temperatureController {
 
     async getUnitsMesurement(req, res, next){
         try {
-            const items = await temperatureService.unitsMesurement();
+            const items = await convertService.unitsMesurement(req.params.type);
             success(req, res, items, 200);
         } catch (err) {
             next(err);
@@ -21,4 +21,4 @@ class temperatureController {
     }
 }
 
-module.exports = new temperatureController();
+module.exports = new convertController();

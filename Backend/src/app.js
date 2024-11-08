@@ -5,9 +5,7 @@ const cors = require("cors");
 const config = require('./config');
 const { errors, response } = require('./middlewares/error');
 
-const lengthRouter = require('./routes/lengthRoute');
-const temperatureRouter = require('./routes/temperatureRoute');
-const weightRouter = require('./routes/weightRoute');
+const convertRouter = require('./routes/convertRouter');
 
 const app = express();
 
@@ -25,9 +23,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 //routes
-app.use('/converter', lengthRouter);
-app.use('/converter', temperatureRouter);
-app.use('/converter', weightRouter);
+app.use('/converter', convertRouter);
 
 //middlware errors
 app.use(errors);
